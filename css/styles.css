@@ -927,7 +927,7 @@ h2 {
 
 /* Ethos Section */
 .ethos-section {
-  background: url('/Cloudinnovex/img/1336.jpg') center/cover fixed;
+  background: url('/img/1336.jpg') center/cover fixed;
   padding: 5rem 2rem;
   color: white;
 }
@@ -1265,8 +1265,6 @@ h2 {
     width: 100%;
   }
 }
-
-
 
 /* Responsive Styles */
 @media (max-width: 768px) {
