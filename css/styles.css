@@ -308,16 +308,19 @@ body {
   }
 
   .card {
-    flex: 0 1 100%;
-    max-width: 100%;
+    flex: 0 1 90%;
+    max-width: 90%;
+    width: 90%;
   }
 }
+
 
 @media (max-width: 768px) {
   .card {
     margin: 0 1rem;
   }
 }
+
 
 
 /* Why CloudInnovex */
