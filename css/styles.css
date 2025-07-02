@@ -313,6 +313,12 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .card {
+    margin: 0 1rem;
+  }
+}
+
 
 /* Why CloudInnovex */
 .value {
