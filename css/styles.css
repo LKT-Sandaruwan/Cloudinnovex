@@ -304,7 +304,7 @@ body {
 .value {
   padding: 5rem 2rem;
   text-align: center;
-  background: url('img/1345.jpg') center center / cover no-repeat fixed;
+  background: url('../img/1345.jpg') center center / cover no-repeat fixed;
   position: relative;
   z-index: 1;
   color: white;
