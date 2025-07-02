@@ -304,7 +304,7 @@ body {
 .value {
   padding: 5rem 2rem;
   text-align: center;
-  background: url('img/1345.jpg') center center / cover no-repeat fixed;
+  background: url('../img/1345.jpg') center center / cover no-repeat fixed;
   position: relative;
   z-index: 1;
   color: white;
@@ -427,19 +427,19 @@ body {
 }
 
 .industry-cards.fintech {
-  background-image: url("/img/industry-fintech.jpg");
+  background-image: url("../img/industry-fintech.jpg");
 }
 
 .industry-cards.healthcare {
-  background-image: url("/img/2149611211.jpg");
+  background-image: url("../img/2149611211.jpg");
 }
 
 .industry-cards.retail {
-  background-image: url("/img/37849.jpg");
+  background-image: url("../img/37849.jpg");
 }
 
 .industry-cards.others {
-  background-image: url("/img/120776.jpg");
+  background-image: url("../img/120776.jpg");
 }
 
 .industry-cards span {
@@ -559,7 +559,7 @@ body {
 
 /* Services */
 .hero-solutions {
-  background-image: url('/img/108502.jpg');
+  background-image: url('../img/108502.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -669,7 +669,7 @@ body {
 }
 
 .cloud-process-bg {
-  background-image: url('/img/456324.jpg'); /* Replace with your image path */
+  background-image: url('../img/456324.jpg'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -797,7 +797,7 @@ body {
 
 /*About section*/
 .hero-about-section {
-  background-image: url('/img/454944.jpg');
+  background-image: url('../img/454944.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -858,7 +858,7 @@ h2 {
 
 /* Hero Section */
 .hero-about {
-  background: url('/img/454944.jpg');
+  background: url('../img/454944.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -927,7 +927,7 @@ h2 {
 
 /* Ethos Section */
 .ethos-section {
-  background: url('/img/1336.jpg') center/cover fixed;
+  background: url('../img/1336.jpg') center/cover fixed;
   padding: 5rem 2rem;
   color: white;
 }
@@ -1065,7 +1065,7 @@ h2 {
 
 /* Hero Section */
 .hero-contact {
-  background: url('/img/39249.jpg');
+  background: url('../img/39249.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
