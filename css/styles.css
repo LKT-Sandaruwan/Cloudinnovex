@@ -300,6 +300,22 @@ body {
   color: #0d47a1;
 }
 
+/* 🔻 Mobile Responsive Styles */
+@media (max-width: 1024px) {
+  .card {
+    flex: 0 1 calc(45% - 2rem);
+    max-width: calc(45% - 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 0 1 calc(90%);
+    max-width: 100%;
+  }
+}
+
+
 /* Why CloudInnovex */
 .value {
   padding: 5rem 2rem;
