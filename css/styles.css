@@ -300,7 +300,7 @@ body {
   color: #0d47a1;
 }
 
-/* Mobile Responsive Styles */
+/* Mobile Styles */
 @media (max-width: 768px) {
   .service-cards {
     flex-direction: column;
@@ -308,19 +308,11 @@ body {
   }
 
   .card {
-    flex: 0 1 90%;
-    max-width: 90%;
-    width: 90%;
+    width: 90% !important;
+    max-width: 90% !important;
+    flex: none !important;
   }
 }
-
-
-@media (max-width: 768px) {
-  .card {
-    margin: 0 1rem;
-  }
-}
-
 
 
 /* Why CloudInnovex */
