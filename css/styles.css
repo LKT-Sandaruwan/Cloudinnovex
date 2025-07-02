@@ -93,8 +93,18 @@ body {
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 212, 255, 0.8%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FFFFFF' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    border: 2px solid #fff !important;
+    border-radius: 6px;
+    padding: 6px 10px;
+  }
+}
+
+
 
 /*  Hero */
 .hero-fullscreen {
@@ -158,6 +168,22 @@ body {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .hero-fullscreen {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  .hero-content h1{
+    font-size: 30px;
+  }
+
+  .hero-content p{
+    font-size: 15px;
+  }
 }
 
 .primary-btn,
@@ -595,6 +621,9 @@ body {
   justify-content: center;
 }
 
+.hero-overlay .container {
+  text-align: left;
+}
 
 .hero-title {
   max-width: 600px;
@@ -616,6 +645,19 @@ body {
   opacity: 0.95;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
 }
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+  .hero-overlay .container {
+    text-align: center;
+  }
+
+  .hero-title,
+  .hero-subtitle {
+    margin-left: 0;
+  }
+}
+
 
 /* Services cards*/
 .service-cards {
@@ -676,7 +718,7 @@ body {
   color: white;
 }
 
-/*Services methodology*/
+/* Services methodology */
 .cloud-process-section {
   position: relative;
   padding: 5rem 0;
@@ -684,7 +726,7 @@ body {
 }
 
 .cloud-process-bg {
-  background-image: url('../img/456324.jpg'); /* Replace with your image path */
+  background-image: url('../img/456324.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -696,6 +738,8 @@ body {
   font-size: 2.5rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
+  color: #fff;
+  text-align: center;
 }
 
 /* Card container */
@@ -709,6 +753,7 @@ body {
 /* Glass effect cards */
 .cloud-card {
   flex: 0 1 calc(33.333% - 2rem);
+  max-width: calc(33.333% - 2rem);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 2rem;
@@ -738,6 +783,31 @@ body {
   margin-bottom: 1rem;
   color: white;
 }
+
+/* Responsive: Tablet */
+@media (max-width: 992px) {
+  .cloud-card {
+    flex: 0 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+  .cloud-card {
+    flex: 0 1 100%;
+    max-width: 100%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .cloud-process-bg {
+    background-attachment: scroll;
+  }
+}
+
 
 /*services contact us*/
 .contact-cta {
@@ -872,7 +942,7 @@ h2 {
 }
 
 /* Hero Section */
-.hero-about {
+.hero-solutionss {
   background: url('../img/454944.jpg');
   background-size: cover;
   background-position: center;
@@ -885,53 +955,27 @@ h2 {
   color: white;
 }
 
-.hero-about .overlay {
-  background: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.hero-about h1 {
-  text-align: start;
-  max-width: 600px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 3.5rem;
-  line-height: .9;
-  margin-bottom: 20px;
-  margin-left: -550px;
-  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
-}
-
-.hero-about p{
-  max-width: 600px;
-  color: #d3e1f0;
-  font-size: 1.3rem;
-  margin-left: -519px;
-  margin-bottom: 3px;
-  text-align: start;
-  opacity: 0.95;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
-}
-
 /* Mission Section */
 .mission-section {
   padding: 5rem 2rem;
   background: white;
 }
 
+.mission-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .mission-text {
-  flex: 1;
+  flex: 1 1 500px;
   max-width: 600px;
   margin-right: 2rem;
 }
 
 .mission-image {
-  flex: 1;
+  flex: 1 1 400px;
   text-align: center;
 }
 
@@ -939,6 +983,14 @@ h2 {
   max-width: 100%;
   border-radius: 20px;
 }
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+  .mission-section .container {
+    text-align: center;
+  }
+}
+
 
 /* Ethos Section */
 .ethos-section {
